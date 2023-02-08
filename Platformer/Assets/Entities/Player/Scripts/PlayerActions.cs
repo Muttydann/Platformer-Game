@@ -8,7 +8,7 @@ public class PlayerActions
 
     public void Move(Transform trans)
     {
-        player.Comp.Rb.velocity = Vector2.right;
+        player.Comp.Rb.velocity = new Vector2(player.Stats.dir.x * player.Stats.spd * Time.deltaTime, player.Stats.dir.y);
     }
 
     public PlayerActions(Player player)

@@ -309,6 +309,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 844281164024470899, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.66860116
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164024470899, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164024470899, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164024470899, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.74362135
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164024470899, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 96.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164085187490, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9967031
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164085187490, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164085187490, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164085187490, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.08113537
+      objectReference: {fileID: 0}
+    - target: {fileID: 844281164085187490, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 9.308
+      objectReference: {fileID: 0}
     - target: {fileID: 844281164545010605, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.714
@@ -342,6 +382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comp:
     rb: {fileID: 844281164649918762}
+  stats:
+    walkSpd: 200
+    runSpd: 1
 --- !u!50 &844281164649918762
 Rigidbody2D:
   serializedVersion: 4
