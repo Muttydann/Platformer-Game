@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844281163557616664, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.016
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 844281163557616664, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -361,6 +361,26 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b427f62cdf5505d4299d5ffc3724ca96, type: 2}
+    - target: {fileID: 7625528285747668284, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: c91389c39d842cc4190ea8be0836798a, type: 2}
+    - target: {fileID: 7625528285747668284, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625528285747668284, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625528285747668284, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 08291d03539d16846be3080b394f5387, type: 2}
+    - target: {fileID: 7625528285747668284, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 24647f361666b954c8aa562e52617d50, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
 --- !u!1 &844281164649918760 stripped
