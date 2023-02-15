@@ -634,6 +634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comp:
     rb: {fileID: 844281164649918762}
+    anim: {fileID: 844281164649918763}
   stats:
     walkSpd: 200
     runSpd: 1
@@ -658,3 +659,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &844281164649918763 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2059921522782340087, guid: 686d10c45cb45b4439ddd70776183d46, type: 3}
+  m_PrefabInstance: {fileID: 844281164649918759}
+  m_PrefabAsset: {fileID: 0}

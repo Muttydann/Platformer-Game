@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-    
+        Comp.Anim.SetBool("l_Idle", true);
     }
 
    
@@ -37,6 +37,16 @@ public class Player : MonoBehaviour
     {
 
         act.Move(transform);
+        if(Comp.Rb.velocity.magnitude > 0)
+        {
+            Comp.Anim.SetBool("l_Idle", false);
+            Comp.Anim.SetBool("l_Walk", true);
+        }
+        else
+        {
+            Comp.Anim.SetBool("l_Idle", true);
+            Comp.Anim.SetBool("l_Walk", false);
+        }
     }
 
 }
