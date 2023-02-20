@@ -9,6 +9,17 @@ public class PlayerActions
     public void Move(Transform trans)
     {
         player.Comp.Rb.velocity = new Vector2(player.Stats.dir.x * player.Stats.spd * Time.deltaTime, player.Stats.dir.y);
+
+        if(player.Stats.dir.x != 0)
+        {
+            trans.localScale = new Vector3(player.Stats.dir.x < 0 ? -1 : 1, 1, 1);
+            player.Comp.Animat.TryPlayAnim("b_Walk");
+            player.Comp.Animat.TryPlayAnim("l_Walk");
+        }else if(player.Comp.Rb.velocity == Vector2.zero)
+        {
+            player.Comp.Animat.TryPlayAnim("b_Idle");
+            player.Comp.Animat.TryPlayAnim("l_Idle");
+        }
     }
 
     public PlayerActions(Player player)

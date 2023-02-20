@@ -14,20 +14,24 @@ public class Player : MonoBehaviour
     public PlayerComponents Comp { get => comp; set => comp = value; }
     public PlayerStats Stats { get => stats; set => stats = value; }
 
-    private void Awake()
+    private void Start()
     {
         act = new PlayerActions(this);
         util = new PlayerUtilities(this);
         stats.spd = stats.WalkSpd;
 
+        AnyStateAnimation[] anims = new AnyStateAnimation[]
+        {
+            new AnyStateAnimation(RIG.BODY, "b_Idle"),
+            new AnyStateAnimation(RIG.BODY, "b_Walk"),
+            new AnyStateAnimation(RIG.LEGS, "l_Idle"),
+            new AnyStateAnimation(RIG.LEGS, "l_Walk")
+        };
+
+        comp.Animat.AddAnim(anims);
     }
 
-    void Start()
-    {
-        Comp.Anim.SetBool("l_Idle", true);
-    }
 
-   
     void Update()
     {
         util.HandleInput();
@@ -37,16 +41,7 @@ public class Player : MonoBehaviour
     {
 
         act.Move(transform);
-        if(Comp.Rb.velocity.magnitude > 0)
-        {
-            Comp.Anim.SetBool("l_Idle", false);
-            Comp.Anim.SetBool("l_Walk", true);
-        }
-        else
-        {
-            Comp.Anim.SetBool("l_Idle", true);
-            Comp.Anim.SetBool("l_Walk", false);
-        }
+
     }
 
 }

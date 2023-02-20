@@ -59,6 +59,8 @@
     <Compile Include="Assets\Entities\Player\Scripts\Player.cs" />
     <Compile Include="Assets\Entities\Player\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Entities\Player\Scripts\PlayerActions.cs" />
+    <Compile Include="Assets\Entities\Player\Scripts\Animation\AnyStateAnimator.cs" />
+    <Compile Include="Assets\Entities\Player\Scripts\Animation\AnyStateAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Entities\Player\Scripts\NewAssemblyReference.asmref" />
