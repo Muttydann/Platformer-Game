@@ -9,6 +9,13 @@ public class PlayerActions
     public void Move(Transform trans)
     {
         player.Comp.Rb.velocity = new Vector2(player.Stats.dir.x * player.Stats.spd * Time.deltaTime, player.Stats.dir.y);
+        if(player.Stats.jump == true)
+        {
+            player.Comp.Rb.AddForce(Vector2.up * 300);
+            player.Stats.jump = false;
+            player.Stats.grounded = false;
+        }
+
 
         if(player.Stats.dir.x != 0)
         {

@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
         act = new PlayerActions(this);
         util = new PlayerUtilities(this);
         stats.spd = stats.WalkSpd;
+        stats.jump = false;
+        stats.grounded = true;
 
         AnyStateAnimation[] anims = new AnyStateAnimation[]
         {
@@ -31,6 +33,13 @@ public class Player : MonoBehaviour
         comp.Animat.AddAnim(anims);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            stats.grounded = true;
+        }
+    }
 
     void Update()
     {

@@ -9,6 +9,8 @@ public class PlayerStats
     public float spd { get; set; }
     public float WalkSpd { get => walkSpd; set => walkSpd = value; }
     public float RunSpd { get => runSpd; set => runSpd = value; }
+    public bool jump { get; set; }
+    public bool grounded { get; set; }
 
     [SerializeField] private float walkSpd;
     [SerializeField] private float runSpd;
